@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="card">
+  <h1>Course #{{ course_id }}</h1>
+  <p>Course preview, module list, discussions, assignment and notes UI hooks.</p>
+  <button onclick="requestSummary()">Generate AI Summary</button>
+  <pre id="summary-output"></pre>
+</section>
+{% endblock %}
